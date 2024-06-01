@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #E6E6F3;
+        }
+        .letter{
+            background-color: rgba(0, 128, 0, 0.9);
+            /* height: 100vh; */
+            width: 50%;
+            margin: 30px auto;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .letter div{
+            border-bottom: .5px solid black;
+            margin-bottom: 50px;
+            /* padding: 10px; */
+        }
+        .letter p{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <div><h1>Loan Application Update: Credit Score Requirement</h1></div>
+        <h3 id="demo"></h3>
+        <p>I hope this letter finds you well. I wanted to take a moment to update you regarding your recent loan application with us.</p>
+        <p>After careful review of your application, we regret to inform you that we are unable to approve your loan request at this time. One of the key factors that influenced this decision is that your current credit score does not meet the minimum requirement set for this particular loan program.</p>
+        <p>We understand that this news may be disappointing, and we sincerely apologize for any inconvenience this may cause. However, please note that this decision is based on our internal policies and guidelines, which are designed to ensure responsible lending practices and to protect both our clients and our institution.</p>
+        <p>While we are unable to move forward with your application at this time, we encourage you to continue working on improving your credit score. Building a strong credit history can open up more opportunities for future financial endeavors, and we are here to assist you along the way.</p>
+        <p>If you have any questions or would like to discuss your application further, please do not hesitate to contact us. We value your business and hope to work with you in the future.</p>
+        <p>Thank you for considering us for your financial needs.</p>
+        <p>Best regards</p>
+        <p>MR. JACKSON GABRIEL EJEH</p>
+        <p>MANAGEMENT</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+    let user = JSON.parse(localStorage.getItem('UserName'));
+    let username = document.getElementById('demo');
+    let messege = "Dear "
+    username.innerHTML = (messege + user.title + " " +  user.fullName + ",")
+</script>
+</html>

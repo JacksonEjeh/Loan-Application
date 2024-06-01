@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navigation1">
+        <div class="logo">
+            <img src="./img/janssen.png" alt="">
+            <div class="logo_text">
+                <h3>TEXDA</h3>
+            <P>FINIANCIAL INSTITUTION</P>
+            </div>
+        </div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">Testimonies</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+        <div class="search">
+            <img src="./img/magnifying-glass.png" alt="">
+            <img src="./img/cart.png" alt="">
+        </div>
+        <div class="menu">
+            <img src="./img/menu.png" alt="">
+        </div>
+    </nav>
+    <div class="bgImage">
+        <div class="overlay">
+            <h1>Apply Loan</h1>
+            <div class="apply">
+                <p><b><a href="index.html">Home</a></b></p>
+                <img src="./img/right-arrow1.png" alt="">
+                <p><b>Apply Loan</b></p>
+            </div>
+        </div>
+    </div>
+    <form id="loanPage">
+        <h1 id="display"></h1>
+        <div class="form_container">
+            <div class="loan">
+                <h1>Loan Details</h1>
+            </div>
+            <div class="grid">
+                <div>
+                    <label for="lastDepositDate">Title*</label><br>
+                    <select name="" id="title">
+                        <option value="">Select tittle</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mr">Mrs</option>
+                    </select>
+                    <span class="error_messege" id="titleError">Field can not be empty</span>
+                </div>
+                <div>
+                    <label for="annualIncome">Full Name*</label><br>
+                    <input type="text" placeholder="Full Name" id="fullName">
+                    <span class="error_messege" id="fullNameError">Field can not be empty</span>
+                    <span class="error_messege" id="fullNameError2">Name should be in alphabet</span>
+                </div>
+                <div>
+                    <label for="annualIncome">Annual Income*</label><br>
+                    <input type="text" placeholder="Enter Annual Income" id="annualIncome">
+                    <span class="error_messege" id="annualIncomeError">Field can not be empty</span>
+                    <span class="error_messege" id="annualIncomeError2">Figures Only</span>
+                </div>
+                <div>
+                    <label for="currentBalance">Current Balance*</label><br>
+                    <input type="text" placeholder="Current balance" id="accountBalance">
+                    <span class="error_messege" id="accountBalanceError">Field can not be empty</span>
+                    <span class="error_messege" id="accountBalanceError2">Figures Only</span>
+                </div>
+                <div>
+                    <label for="loanAmount">Loan Amount*</label><br>
+                    <input type="text" placeholder="Enter loan amount" id="requestedLoan">
+                    <span class="error_messege" id="requestedLoanError">Field can not be empty</span>
+                    <span class="error_messege" id="requestedLoanError2">Figures Only</span>
+                </div>
+                <div>
+                    <label for="lastDepositDate">Last deposit date*</label><br>
+                    <input type="date" id="depositedDate">
+                    <span class="error_messege" id="depositedDateError">Field can not be empty</span>
+                </div>
+                <div>
+                    <div>
+                        <label for="lastLoanCollected">Last loan collection date*</label><br>
+                        <input type="date" id="lastCollectionDate">
+                        <span class="error_messege" id="lastCollectionDateError">Field can not be empty</span>
+                    </div>
+                    <div>
+                        <label for="lastDepositDate">6month Credit History*</label><br>
+                        <select name="" id="sixMonth">
+                            <option value=""></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <span class="error_messege" id="sixMonthError">Field can not be empty</span>
+                    </div>
+                    <div>
+                        <label for="accountType">Account Type*</label><br>
+                        <select name="" id="accountType">
+                            <option value="">Select account type</option>
+                            <option value="savings">Savings</option>
+                            <option value="current">Current</option>
+                        </select>
+                        <span class="error_messege" id="accountTypeError">Field can not be empty</span>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="loan">
+                        <h1>Loan Repayment Period:</h1>
+                    </div>
+                    <div>
+                        <label for="takeLoan">Intended date for taking the loan*</label><br>
+                        <input type="date" id="takingLoan">
+                        <span class="error_messege" id="takingLoanError">Field can not be empty</span>
+                    </div>
+                    <div>
+                        <label for="loanRpayment">Intended date for loan Repayment*</label><br>
+                        <input type="date" id="repayLoan">
+                        <span class="error_messege" id="repayLoanError">Field can not be empty</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="error_messege textAlign" id="annualIncomeError3">Your loan ammount is currently above 45% of your Annaual Income</h4>
+            <input class="button" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e6e6f3;
+}
+.navigation1{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+#loanPage{
+    margin-top: 50px;
+}
+.error{
+    border: 2px solid red;
+}
+.error_messege{
+    color: red;
+    display: none;
+    font-size: 12px;
+}
+.form_container div{
+    margin-bottom: 30px;
+}
+.form_container{
+    background-color: white;
+    width: 85%;
+    padding: 20px 50px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.bgImage{
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.overlay h1{
+    color: white;
+    font-size: 50px;
+}
+.overlay p{
+    font-size: 20px;
+    color: green;
+    padding-bottom: 7px;
+}
+.apply{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.overlay p a{
+    color: white;
+    text-decoration: none;
+    /* padding: 5px; */
+}
+.overlay p a:hover{
+    color: green;
+    border-bottom: 2px solid green;
+}
+.overlay img{
+    height: 17px;
+}
+.loan{
+    margin-top: 5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: green;
+    font-weight: bolder;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+}
+label{
+    color: green;
+    font-size: 16px;
+    font-weight: bolder;
+}
+input{
+    margin-top: 10px;
+    padding: 20px ;
+    width: 100%;
+    background-color: #ddd;
+    border: none;
+}
+.button{
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textAlign{
+    text-align: center;
+}
+select{
+    width: 100%;
+    padding: 20px ;
+    background-color: #ddd;
+    border: none;
+}

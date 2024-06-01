@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #E6E6F3;
+        }
+        .letter{
+            background-color: rgba(0, 128, 0, 0.9);
+            /* height: 100vh; */
+            width: 50%;
+            margin: 30px auto;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .letter div{
+            border-bottom: .5px solid black;
+            margin-bottom: 50px;
+            /* padding: 10px; */
+        }
+        .letter p{
+            font-size: 17px;
+        }
+        ul li{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <div><h1>Congratulations on Your Loan Approval!</h1></div>
+        <h3 id="demo"></h3>
+        <p>I am thrilled to inform you that your recent loan application has been approved! Congratulations on this significant milestone, and thank you for choosing us to be a part of your financial journey.</p>
+        <p>We understand the importance of this loan for you, and we are committed to ensuring a smooth and seamless process moving forward. Here are the key details regarding your approved loan</p>
+        <p>
+            <ul>
+                <li id="displayAmount"></li>
+                <li>Interest Rate: 10%</li>
+            </ul>
+        </p>
+        <p>While we are unable to move forward with your application at this time, we encourage you to continue working on improving your credit score. Building a strong credit history can open up more opportunities for future financial endeavors, and we are here to assist you along the way.</p>
+        <p>If you have any questions or would like to discuss your application further, please do not hesitate to contact us. We value your business and hope to work with you in the future.</p>
+        <p>Thank you for considering us for your financial needs.</p>
+        <p>Best regards</p>
+        <p>MR. JACKSON GABRIEL EJEH</p>
+        <p>MANAGEMENT</p>
+    </div>
+    
+</body>
+<script>
+
+    let user = JSON.parse(localStorage.getItem('UserName'));
+    let username = document.getElementById('demo');
+    let messege = "Dear "
+    username.innerHTML = (messege + user.title + " " + user.fullName + ",")
+
+    let displayAmount = document.getElementById('displayAmount')
+    let msg = "Loan Amount: "
+    displayAmount.innerHTML = (msg + " " + "$" + user.requestedLoan)
+</script>
+</html>
